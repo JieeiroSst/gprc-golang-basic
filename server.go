@@ -1,19 +1,18 @@
 package main
 
 import (
-
+	"context"
 	"github.com/JIeeiroSst/app/proto"
-	"log"
-	"net"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
-	"context"
+	"log"
+	"net"
 )
 
 type Server struct {}
 
 func main(){
-	lis,err:=net.Listen("tcp",":8080")
+	lis,err:=net.Listen("tcp",":4040")
 	if err!=nil {
 		log.Println(err)
 	}
