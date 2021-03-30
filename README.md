@@ -5,3 +5,5 @@ protoc --go_out=. --go_opt=paths=source_relative \
     
 
 protoc --go_out=paths=source_relative:. path/to/file.proto
+
+protoc folder/file.proto --go_out=plugins=grpc:.
